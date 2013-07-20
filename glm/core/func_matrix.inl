@@ -54,7 +54,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat2x2<T, P> m(detail::tmat2x2<T, P>::null);
+		detail::tmat2x2<T, P> m(detail::tmat2x2<T, P>::_null);
 		m[0][0] = c[0] * r[0];
 		m[0][1] = c[1] * r[0];
 		m[1][0] = c[0] * r[1];
@@ -71,7 +71,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat3x3<T, P> m(detail::tmat3x3<T, P>::null);
+		detail::tmat3x3<T, P> m(detail::tmat3x3<T, P>::_null);
 		for(typename detail::tmat3x3<T, P>::size_type i(0); i < m.length(); ++i)
 			m[i] = c * r[i];
 		return m;
@@ -86,7 +86,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat4x4<T, P> m(detail::tmat4x4<T, P>::null);
+		detail::tmat4x4<T, P> m(detail::tmat4x4<T, P>::_null);
 		for(typename detail::tmat4x4<T, P>::size_type i(0); i < m.length(); ++i)
 			m[i] = c * r[i];
 		return m;
@@ -101,7 +101,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat2x3<T, P> m(detail::tmat2x3<T, P>::null);
+		detail::tmat2x3<T, P> m(detail::tmat2x3<T, P>::_null);
 		m[0][0] = c.x * r.x;
 		m[0][1] = c.y * r.x;
 		m[0][2] = c.z * r.x;
@@ -120,7 +120,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat3x2<T, P> m(detail::tmat3x2<T, P>::null);
+		detail::tmat3x2<T, P> m(detail::tmat3x2<T, P>::_null);
 		m[0][0] = c.x * r.x;
 		m[0][1] = c.y * r.x;
 		m[1][0] = c.x * r.y;
@@ -139,7 +139,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat2x4<T, P> m(detail::tmat2x4<T, P>::null);
+		detail::tmat2x4<T, P> m(detail::tmat2x4<T, P>::_null);
 		m[0][0] = c.x * r.x;
 		m[0][1] = c.y * r.x;
 		m[0][2] = c.z * r.x;
@@ -160,7 +160,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat4x2<T, P> m(detail::tmat4x2<T, P>::null);
+		detail::tmat4x2<T, P> m(detail::tmat4x2<T, P>::_null);
 		m[0][0] = c.x * r.x;
 		m[0][1] = c.y * r.x;
 		m[1][0] = c.x * r.y;
@@ -181,7 +181,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat3x4<T, P> m(detail::tmat3x4<T, P>::null);
+		detail::tmat3x4<T, P> m(detail::tmat3x4<T, P>::_null);
 		m[0][0] = c.x * r.x;
 		m[0][1] = c.y * r.x;
 		m[0][2] = c.z * r.x;
@@ -206,7 +206,7 @@ namespace glm
 	{
 		GLM_STATIC_ASSERT(detail::type<T>::is_float, "'outerProduct' only accept floating-point inputs");
 
-		detail::tmat4x3<T, P> m(detail::tmat4x3<T, P>::null);
+		detail::tmat4x3<T, P> m(detail::tmat4x3<T, P>::_null);
 		m[0][0] = c.x * r.x;
 		m[0][1] = c.y * r.x;
 		m[0][2] = c.z * r.x;
